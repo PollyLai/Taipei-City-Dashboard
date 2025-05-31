@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 # 讀取 CSV 檔案
-input_file = '臺北市流感疫苗合約醫療院所(成人)_with_latlon.csv'
+input_file = '../dataset/114年度地方衛生局指定酒癮治療機構(公告)_1140410_with_latlon.csv'
 
 df = pd.read_csv(input_file, encoding='utf-8')
 # df = pd.read_csv(input_file, encoding='big5-hkscs')

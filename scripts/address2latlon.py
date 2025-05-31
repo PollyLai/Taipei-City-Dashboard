@@ -63,7 +63,7 @@ def get_coordinates(address, max_retries=3):
     return None, None
 
 # 掃描資料夾並統計不含 _with_latlon 的 CSV 檔案
-dataset_path = "dataset"
+dataset_path = "..\dataset"
 if not os.path.exists(dataset_path):
     print(f"資料夾 {dataset_path} 不存在，程式結束")
     logging.error(f"資料夾 {dataset_path} 不存在")
