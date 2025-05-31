@@ -1,13 +1,15 @@
 import pandas as pd
 import os
 # 讀取 CSV 檔案
-input_file = '../dataset/114年度地方衛生局指定酒癮治療機構(公告)_1140410_with_latlon.csv'
+input_file = '../dataset/新北市身心障礙社福機構_with_latlon.csv'
 
 df = pd.read_csv(input_file, encoding='utf-8')
 # df = pd.read_csv(input_file, encoding='big5-hkscs')
-
-file_name, _ = os.path.splitext(input_file)
+base_name = os.path.basename(input_file)
+file_name, _ = os.path.splitext(base_name)
 output_file = file_name+'_with_district.csv'
+output_file = '../dataset_/' + output_file
+print(output_file)
 # add_column="機構地址"
 add_column="地址"
 # 雙北 41 個行政區名稱列表
